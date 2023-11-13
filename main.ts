@@ -24,14 +24,14 @@ input.onButtonPressed(Button.A, function () {
     sprite = game.createSprite(0, 0)
     basic.pause(500)
 
-    while (loopCounter1 <= 4) {
+    while (loopCounter1 <= 3) {
       while (loopCounter2 <= 4) {
         sprite.move(1)
-        loopCounter1 = loopCounter1 + 1
+        loopCounter2 = loopCounter2 + 1
         basic.pause(500)
       }
-      loopCounter2++
-      loopCounter1 = 0
+      loopCounter1++
+      loopCounter2 = 0
       sprite.turn(Direction.Right, 90)
     }
 
